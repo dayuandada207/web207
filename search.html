@@ -2,7 +2,7 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>大元搜一搜</title>
   <script type="text/javascript">
    window.onload=function(){
     var oTab=document.getElementById("tab");
@@ -12,9 +12,7 @@
      {
       var str1=oTab.tBodies[0].rows[i].cells[1].innerHTML.toUpperCase();
       var str2=oBt[0].value.toUpperCase();
-      //使用string.toUpperCase()(将字符串中的字符全部转换成大写)或string.toLowerCase()(将字符串中的字符全部转换成小写)
-      //所谓忽略大小写的搜索就是将用户输入的字符串全部转换大写或小写，然后把信息表中的字符串的全部转换成大写或小写，最后再去比较两者转换后的字符就行了
-      /*******************************JS实现表格忽略大小写搜索*********************************/
+      
       if(str1==str2){
        oTab.tBodies[0].rows[i].style.background='red';
       }
